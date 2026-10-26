@@ -34,7 +34,7 @@ const Books = async () => {
       </div>
 
       {/* Books Grid */}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {booksData.slice(0, 9).map((book: Book, ind: number) => {
           return <BookCard key={ind} book={book} />;
         })}
